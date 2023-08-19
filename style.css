@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,400;1,800&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe3bd86;
+}
+
+header{
+    position: fixed;
+    background-color: #ffb347;
+    top: 0;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    font-weight: 600;
+    font-size: 22px;
+    color: white;
+}
+.container{
+    margin-top: 100px;
+}
+.info{
+    display: inline;
+    top: 100px;
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    z-index: -1;
+}
+hr{
+    padding: 0;
+    margin-top: 7px;
+}
+.text{
+
+    /* border: 1px solid rgba(129, 129, 129, 0.201); */
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: white;
+    height: 450px;
+   
+}
+.tools{
+    background-color: #363532;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.color{
+    line-height: 0;
+}
+
+.tools .color i{
+    font-size: 20px;
+    margin: 2px;
+    line-height: 0;
+}
+.tools i{
+    margin: 5px;
+}
+.util{
+    line-height: 0;
+}
+.util i{
+
+    font-size: 30px;
+    line-height: 0;
+}
+.fi-ss-check-circle{
+    color: #77DD77;
+}
+.fi-sr-cross-circle{
+    color: 	#C23B22;
+}
+
+
+.blue{
+    color: #779ECB;
+}
+.yellow{
+    color: #FDFD96;
+}
+.red{
+    color: #FF6961;
+}
+.white{
+    color: white;
+}
+.pink{
+    color: #F8C8DC;
+}
+.green{
+    color:#77DD77;
+}
+.heading textarea{
+    width: 100%;
+    outline:none;
+    border: 0;
+    resize: none;
+    overflow: hidden;
+}
+.para{
+    height: 100%;
+}
+.para textarea{
+    outline:none;
+    border: 0;
+    resize: none;
+    font-size: 20px;
+    height: 300px;
+    width: 100%;
+    padding: 15px;
+    height: 450px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.add{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 11;
+    border-radius: 50%;
+    font-size: 23px;
+    background-color: #ffb347;
+    color:white;
+    outline: none;
+    border: none;
+    padding: 13px;
+    line-height: 0;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 80px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.126);
+    padding: 10px 30px;
+    background-color:  #ffb347;
+    color: white;
+    border-radius: 15px;
+    transform: translateX(-50%) ;
+    left:50%;
+    transition: .3s ease;
+  }
+  .popup-d {
+    display: none;
+    position: fixed;
+    top: 80px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.126);
+    padding: 10px 30px;
+    background-color:  #ffb347;
+    color: white;
+    border-radius: 15px;
+    transform: translateX(-50%) ;
+    left:50%;
+    transition: .3s ease;
+  }
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    
+    border-radius: 50px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(105, 105, 105, 0.103);
+    border-radius: 50px;
+  }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <meta content='yes' name='mobile-web-app-capable'/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header class="header">
+        Note Flow
+    </header>
+    <div class="info">
+        Click on + button to add a note
+    </div>
+    <div class="container " >
+        <div class="row g-3" id="main">
+
+        <!-- <div class="note col-lg-3 col-md-4 col-sm-6">
+            <div class="tools">
+                <div class="color">
+                <i class="fi fi-ss-circle white"></i>
+                <i class="fi fi-ss-circle blue"></i>
+                <i class="fi fi-ss-circle yellow"></i>
+                <i class="fi fi-ss-circle red"></i>
+                </div>
+                <div class="util">
+                    <i class="fi fi-br-check"></i>
+                    <i class="fi fi-br-cross"></i>
+                </div>
+            </div>
+            <div class="text p-3">
+                <div class="heading"><textarea name="" id=""  rows="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quis possimus atque, nobis perspiciatis itaque!</textarea></div><hr>
+                <div class="para"><textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, illo doloribus maxime ex sunt similique architecto exercitationem modi  veritatis quisquam corporis quia facere at sed ipsum minus officiis a maxime doloremque laudantium anis assumenda similique corrupti illum eos repellat. Magnam esse iure, pariatur ipsa, cumque voluptatem, sint at officiis quisquam vero nobis? Nisi voluptas pariatur ad sed facesequatur assumenda? Voluptate cum id eum architecto distinctio iusto perferendis, sunt, beatae corrupti amet eveniet a quidem!</textarea></div>
+            </div>
+        </div> -->
+
+        </div>
+
+    </div>
+    <button class=" add " id="addBtn"><i class="fi fi-br-plus"></i></button>
+    <div class="popup">Note Saved</div>
+    <div class="popup-d">Note Deleted</div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('load', () => {
+          registerSW();
+        });
+     
+        // Register the Service Worker
+        async function registerSW() {
+          if ('serviceWorker' in navigator) {
+            try {
+              await navigator
+                    .serviceWorker
+                    .register('serviceworker.js');
+            }
+            catch (e) {
+              console.log('SW registration failed');
+            }
+          }
+        }
+     </script>
+    <script src="script.js"></script>
+</body>
+</html>

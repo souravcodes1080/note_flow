@@ -1,0 +1,22 @@
+{
+    "name":"Note Flow",
+    "short_name":"Note Flow",
+    "start_url":"index.html",
+    "display":"fullscreen",
+    "background_color":"#FAC898",
+    "theme_color":"#000000",
+    "scope": ".",
+    "description":"Note Flow is a note taking app where you get many aestheic color pallet to organize your go to jots.",
+    "icons":[
+    {
+    "src":"icon-192x192.png",                     
+    "sizes":"192x192",
+    "type":"image/png"
+    },
+    {
+    "src":"icon-512x512.png",
+    "sizes":"512x512",
+    "type":"image/png"
+    }
+  ]
+}
